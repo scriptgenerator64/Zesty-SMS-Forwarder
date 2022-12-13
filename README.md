@@ -1,7 +1,7 @@
 
 # Zesty SMS Forwarder
 <img align="right" src="assets/sample_screen.png" width="250px">
-Anyone who has tried transitioning all of their telecommunications over to Voice Over IP (VOIP) knows that there are a few companies that refuse to accept their phone VOIP number as an SMS verification method.
+Anyone who has tried transitioning all of their telecommunications over to Voice-Over-IP (VOIP) knows that there are a few companies, mostly large financial institutions, that refuse to accept VOIP phone numbers as SMS verification methods.
 
 For that reason, it is mandatory to always keep a legacy SMS line active; this Android project will allow you to forward any received SMS messages to an email or phone number of your choice and has numerous other quality-of-life features.
 
@@ -9,18 +9,24 @@ For that reason, it is mandatory to always keep a legacy SMS line active; this A
 Simply install this app onto a secondary Android phone (with the SMS SIM card in it) and leave it plugged in and powered on. Here are the app's features :
 
 **1. Receive Messages**
-When a message is received, it will be redirected to the target phone. Message body will have `from {source number}:` (and a line break) prepended, message content starts at the second line.
+When a message is received, it will be redirected to the target phone. Message body will be of the form `from {source number}:` (line break) {message content}.
 
 *Alternatively*, you can also specify an email SMTP server with login credentials and have the SMS forwarded to you via email instead of or along with SMS.
 
 **2. Send Messages**
 You can control the Android phone to send messages by sending a message to the Android phone from the target phone you specified earlier. Such messages should start with `to {receive number}:` (and a line break) followed by the message content to be forwarded (only the 2nd line onwards will be forwarded).
 
+Example:
+```
+to +11234567890:
+Hi!
+```
+
 **3. Keep-Alive Monthly Ping**
 You can toggle the "Monthly Ping" switch to make the app send a randomized greeting to your target number each month (the first message will be sent 1 minute after the toggle is first enabled, future messages will come in 30 day intervals). This feature exists because some carriers, such as 7-Eleven Speakout (which this app was tested on), require monthly activity to keep the line active.
 
 ## Setup
-1. Pick a cheap Android phone and install this app onto it using the `.apk` file downloaded from the [releases page](https://github.com/scriptgenerator64/personal_sms_forwarder/releases). You can also build the app from source to ensure safety.
+1. Pick a cheap Android phone and install this app onto it using the `.apk` file downloaded from the [releases page](https://github.com/scriptgenerator64/Zesty-SMS-Forwarder/releases). You can also build the app from source to ensure safety.
 2. Launch the app and accept the SMS receive and send permission prompt. The app won't work without this.
 3. Enter the target phone number.
 4. Enable email forwarding and enter credentials if you so choose to (nothing leaves the app, your data is safe!)
