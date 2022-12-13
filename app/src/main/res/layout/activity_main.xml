@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context="com.github.zesty_sms_forwarder.MainActivity">
+
+    <EditText
+        android:id="@+id/targetPhoneNumberInput"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/phone_input_hint"
+        android:inputType="phone"
+        android:selectAllOnFocus="true"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/kill_app_hint_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="445dp"
+        android:gravity="center"
+        android:text="@string/background_info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.334" />
+
+    <EditText
+        android:id="@+id/smtp_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:layout_marginTop="92dp"
+        android:ems="100"
+        android:hint="@string/smtp_input_hint"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginTop="148dp"
+        android:ems="100"
+        android:hint="@string/email_address_input_hint"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:layout_marginTop="212dp"
+        android:ems="100"
+        android:hint="@string/email_password_input_hint"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/sms_forwarding_bool"
+        android:layout_width="110dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="296dp"
+        android:text="@string/forward_via_sms_input_hint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/pinging_bool"
+        android:layout_width="143dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="360dp"
+        android:text="@string/monthly_ping_input_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/email_forwarding_bool"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sms_forwarding_bool"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/email_forwarding_bool"
+        android:layout_width="116dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="292dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/forward_via_email_input_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/focus_grabber"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="692dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="phone_input_hint">Forward to (eg. +1(647)-123-1234):</string>
+    <string name="background_info">Feel free to remove this app from the recent apps list, it will continue to run in the background indefinitely</string>
+    <string name="smtp_input_hint">Email SMTP Server (if Applicable):</string>
+    <string name="email_address_input_hint">Email Address:</string>
+    <string name="email_password_input_hint">Email Password:</string>
+    <string name="forward_via_sms_input_hint">Forward via SMS</string>
+    <string name="monthly_ping_input_hint">Monthly Ping</string>
+    <string name="forward_via_email_input_hint">Forward via Email</string>
+    <string name="app_name">SMS Forwarder</string>
+</resources>
