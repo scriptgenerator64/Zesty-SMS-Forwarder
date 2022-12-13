@@ -1,5 +1,6 @@
 
 # Zesty SMS Forwarder
+<img align="right" src="assets/sample_screen.png">
 Anyone who has tried transitioning all of their telecommunications over to Voice Over IP (VOIP) knows that there are a few companies that refuse to accept their phone VOIP number as an SMS verification method.
 
 For that reason, it is mandatory to always keep a legacy SMS line active; this Android project will allow you to forward any received SMS messages to an email or phone number of your choice and has numerous other quality-of-life features.

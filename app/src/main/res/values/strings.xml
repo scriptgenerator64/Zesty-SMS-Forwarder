@@ -8,5 +8,5 @@
     <string name="forward_via_sms_input_hint">Forward via SMS</string>
     <string name="monthly_ping_input_hint">Monthly Ping</string>
     <string name="forward_via_email_input_hint">Forward via Email</string>
-    <string name="app_name">SMS Forwarder</string>
+    <string name="app_name">Zesty SMS Forwarder</string>
 </resources>
