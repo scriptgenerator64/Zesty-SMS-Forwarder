@@ -49,7 +49,11 @@ public class AlarmReceiver extends BroadcastReceiver {
             }
 
             if (targetNumber.length() > 0) {
-                smsManager.sendTextMessage(targetNumber, null, pingPayload, null, null);
+                try {
+                    smsManager.sendTextMessage(targetNumber, null, pingPayload, null, null);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
