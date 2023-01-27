@@ -48,7 +48,7 @@ public class AlarmReceiver extends BroadcastReceiver {
                 pingPayload += alphabet.charAt(random.nextInt(alphabet.length()));
             }
 
-            if (targetNumber.length() >= 10) {
+            if (targetNumber.length() > 0) {
                 smsManager.sendTextMessage(targetNumber, null, pingPayload, null, null);
             }
         }
