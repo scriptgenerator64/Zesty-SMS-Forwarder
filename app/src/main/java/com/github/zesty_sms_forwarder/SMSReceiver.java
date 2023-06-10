@@ -86,7 +86,7 @@ public class SMSReceiver extends BroadcastReceiver {
                         smsManager.sendTextMessage(forwardNumber, null, forwardPrefix + forwardContent, null, null);
                     }
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    //
                 }
             }
         }

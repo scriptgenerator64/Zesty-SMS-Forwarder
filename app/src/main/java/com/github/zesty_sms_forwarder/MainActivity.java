@@ -133,7 +133,7 @@ public class MainActivity extends Activity {
                             hasCountryCode = true;
                         }
                     } catch (Exception e) {
-                        e.printStackTrace();
+                        //
                     }
 
                     if (!hasCountryCode) {
@@ -143,7 +143,7 @@ public class MainActivity extends Activity {
                             String countryCode = String.valueOf(phoneNumberUtil.getCountryCodeForRegion(CarrierRegion));
                             tempTargetPhone = "+" + countryCode + " " + tempTargetPhone;
                         } catch (Exception e) {
-                            e.printStackTrace();
+                            //
                         }
                     }
                     editor.putString(STORED_PHONE_NUMBER, tempTargetPhone).apply();

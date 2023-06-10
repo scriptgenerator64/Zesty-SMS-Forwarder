@@ -44,14 +44,14 @@ public class CreateEmail {
                     try {
                         Transport.send(mimeMessage);
                     } catch (MessagingException e) {
-                        e.printStackTrace();
+                        //
                     }
                 }
             });
             thread.start();
 
         } catch (Exception e) {
-            e.printStackTrace();
+            //
         }
     }
 }

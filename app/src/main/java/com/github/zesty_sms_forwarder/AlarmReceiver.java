@@ -38,7 +38,7 @@ public class AlarmReceiver extends BroadcastReceiver {
             try {
                 Thread.sleep(sleepSeconds * 1000);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                //
             }
 
             // The number after the "+" is the minimum bound for numChars
@@ -52,7 +52,7 @@ public class AlarmReceiver extends BroadcastReceiver {
                 try {
                     smsManager.sendTextMessage(targetNumber, null, pingPayload, null, null);
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    //
                 }
             }
         }
